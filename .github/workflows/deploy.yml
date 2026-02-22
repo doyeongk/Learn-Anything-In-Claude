@@ -20,16 +20,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
-          cache-dependency-path: docs-site/package-lock.json
+          cache: yarn
+          cache-dependency-path: docs-site/yarn.lock
 
-      - run: npm ci
+      - run: yarn install --frozen-lockfile
 
       - name: Build
         env:
           GITHUB_ORGANISATION: ${{ github.repository_owner }}
           GITHUB_REPOSITORY: ${{ github.event.repository.name }}
-        run: npm run build
+        run: yarn build
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
