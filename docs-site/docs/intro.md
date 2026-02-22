@@ -6,14 +6,21 @@ title: Welcome
 
 # Welcome to Learn Anything
 
-This is your personalised learning curriculum. Run `/project:init` in Claude Code to generate your curriculum, then `/project:start` to begin learning.
+A personalised learning environment powered by Claude Code. Clone the template repo, tell the AI what you want to learn, and it generates a full curriculum — then teaches it to you interactively, concept by concept.
 
 ## Getting Started
 
-1. Open this project in your terminal with Claude Code
-2. Run `/project:init`
-3. Describe what you want to learn
-4. The AI will generate your personalised curriculum
+1. Create your own copy from the [template repo](https://github.com/doyeongk/Learn-Anything-In-Claude) — click **Use this template** on GitHub, then clone your new repo:
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/Learn-Anything-In-Claude.git
+   cd Learn-Anything-In-Claude
+   ```
+2. Open the project in Claude Code:
+   ```bash
+   claude
+   ```
+3. Run `/project:init` and describe what you want to learn
+4. The AI generates your personalised curriculum
 5. Run `/project:start` to begin your first lesson
 
 ## How It Works

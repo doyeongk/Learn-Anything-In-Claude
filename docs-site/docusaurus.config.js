@@ -15,7 +15,7 @@ const config = {
     : 'http://localhost:3000',
   baseUrl: process.env.LOCAL === 'true'
     ? '/'
-    : `/pages/${process.env.GITHUB_ORGANISATION}/${process.env.GITHUB_REPOSITORY}/`,
+    : `/${process.env.GITHUB_REPOSITORY}/`,
 
   organizationName: process.env.GITHUB_ORGANISATION,
   projectName: process.env.GITHUB_REPOSITORY,
