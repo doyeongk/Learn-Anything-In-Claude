@@ -226,3 +226,17 @@ Summarise what was generated:
 - List of all generated files (grouped by type: content, commands, config)
 - Remind the user to run `/project:start` to begin their first lesson
 - Mention `/project:progress` to track completion and `/project:help` for all commands
+
+### GitHub Pages (optional)
+
+After the summary, mention that the curriculum is also browsable as a website. Include these setup steps:
+
+> **Deploy to GitHub Pages (optional)**
+>
+> Your curriculum is a Docusaurus site that can be deployed automatically on every push.
+>
+> 1. Go to your repo's **Settings > Pages**
+> 2. Under **Build and deployment > Source**, select **GitHub Actions**
+> 3. Push to `main` — the included workflow will build and deploy automatically
+>
+> Your site will be live at `https://<your-username>.github.io/<repo-name>/`
