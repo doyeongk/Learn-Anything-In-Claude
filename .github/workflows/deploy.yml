@@ -37,7 +37,7 @@ jobs:
           SITE_REPO: ${{ github.event.repository.name }}
         run: yarn build
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: docs-site/build
 
