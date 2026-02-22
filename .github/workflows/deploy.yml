@@ -33,8 +33,8 @@ jobs:
 
       - name: Build
         env:
-          GITHUB_ORGANISATION: ${{ github.repository_owner }}
-          GITHUB_REPOSITORY: ${{ github.event.repository.name }}
+          SITE_ORG: ${{ github.repository_owner }}
+          SITE_REPO: ${{ github.event.repository.name }}
         run: yarn build
 
       - uses: actions/upload-pages-artifact@v3

@@ -10,15 +10,15 @@ const config = {
   tagline: 'Your personalised learning curriculum',
   favicon: 'img/favicon.ico',
 
-  url: process.env.GITHUB_ORGANISATION && process.env.GITHUB_REPOSITORY
-    ? `https://${process.env.GITHUB_ORGANISATION}.github.io`
+  url: process.env.SITE_ORG && process.env.SITE_REPO
+    ? `https://${process.env.SITE_ORG}.github.io`
     : 'http://localhost:3000',
   baseUrl: process.env.LOCAL === 'true'
     ? '/'
-    : `/${process.env.GITHUB_REPOSITORY}/`,
+    : `/${process.env.SITE_REPO}/`,
 
-  organizationName: process.env.GITHUB_ORGANISATION,
-  projectName: process.env.GITHUB_REPOSITORY,
+  organizationName: process.env.SITE_ORG,
+  projectName: process.env.SITE_REPO,
   trailingSlash: false,
 
   onBrokenLinks: 'warn',

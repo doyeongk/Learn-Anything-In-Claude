@@ -85,7 +85,7 @@ npm start
 
 ```bash
 cd docs-site
-# Edit .env: set GITHUB_ORGANISATION and GITHUB_REPOSITORY
+# Edit .env: set SITE_ORG and SITE_REPO
 npm run build
 npm run deploy
 ```
