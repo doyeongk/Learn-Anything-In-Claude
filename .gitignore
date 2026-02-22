@@ -1,0 +1,21 @@
+# User state
+progress.json
+
+# Exercise workspace contents
+Code/*
+!Code/CLAUDE.md
+
+# Docusaurus
+docs-site/node_modules/
+docs-site/build/
+docs-site/.docusaurus/
+docs-site/.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
