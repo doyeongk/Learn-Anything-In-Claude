@@ -77,18 +77,18 @@ The `docs-site/` directory is a Docusaurus 3 site. Your curriculum content lives
 cd docs-site
 cp .env.template .env
 # Edit .env: set LOCAL=true
-npm install
-npm start
+yarn install
+yarn start
 ```
 
 ### Deploy to GitHub Pages
 
-```bash
-cd docs-site
-# Edit .env: set SITE_ORG and SITE_REPO
-npm run build
-npm run deploy
-```
+One-time setup:
+
+1. Go to your repo's **Settings > Pages**
+2. Under **Build and deployment > Source**, select **GitHub Actions**
+
+After that, every push to `main` triggers the included workflow to build and deploy automatically. Your site will be at `https://<username>.github.io/<repo-name>/`.
 
 ## Architecture
 
@@ -102,4 +102,4 @@ npm run deploy
 ## Requirements
 
 - [Claude Code](https://docs.anthropic.com/en/docs/claude-code) CLI
-- Node.js 18+ (for Docusaurus)
+- Node.js 18+ and Yarn (for Docusaurus site)
